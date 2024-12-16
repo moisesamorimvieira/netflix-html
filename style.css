@@ -1,0 +1,122 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    position: relative; /*  */
+    padding-bottom: 100px;
+    padding-top: 10px;
+}
+
+ul{
+
+    height: 25px; /* Altura */
+    width: 95%; /* Largura */
+    display: flex; /* Para as imagens ficarem uma do lado da outra*/
+    justify-content: space-between; /* espaçamento entre os itens */
+    list-style-type: none; /*tirar os pontos da imagens*/
+    position: fixed; /*Fixar a imagem*/
+}
+.img-topo{  /* Colocando o ponto para avisar que é uma classe */
+
+    height: 25px; /* Altura */
+}
+
+video{
+    width: 100vw; /* Largura */
+    min-height: 80vh; /* Altura */
+}
+
+.capa{
+    position: absolute; /* localização exata */
+    bottom: 25%;  /* top - cima, bottom - baixo, left - esquerda, right - direita */
+    left: 5%;
+    width: 35%;  /* diminuir o tamanho */
+    z-index: 3; /* Colocar o texto na frente do video e imagens */
+}
+
+.capa-titulo{
+    color: white;
+    font-size: 50px; /* Tamanho da fonte*/
+    margin-bottom: 5px;
+    font-weight: bold; /* Negrito */
+    
+}
+.capa-descricao{
+    color: white;    
+    font-size: 15px; 
+    margin-bottom: 15px;
+}
+
+.link-assistir{
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 4px; /* Arredondar as bordas*/
+    cursor: pointer; /* Mãozinha*/
+
+}
+.link-info{
+    background-color: rgba(255,255,255,0.35);
+    color: black;
+    padding: 10px 20px;
+    border-radius: 4px; /* Arredondar as bordas*/
+    cursor: pointer; /* Mãozinha*/
+
+}
+.imagem-carrossel{
+    height: 150px;
+}
+     /*  Class = . , IDS = #  */
+#carouselExampleControls{ 
+    background-color: transparent;
+    position: absolute;
+    bottom: -10px;
+    left: 50px;
+}
+
+.titulo-carrossel{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.botao-som{
+    border: none; /* sem bordas*/
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 4;
+    position: absolute;
+    top: 90px; /* Maior = Descer , Menor= Subir*/
+    right: 15px; /* Maior = Esquerda , Direita= Menor*/
+
+
+}
+.modal{
+    display: none; /* Block: (bloco ele aparece na tela) Display nome: (desaparece, some) */
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0,0,0,0.8);
+
+}
+.modal-conteudo{
+    background-color: #181818;
+    margin: 30px auto;
+    padding: 2px;
+    width: 60%;
+    color: white;
+
+
+
+}
+
+
